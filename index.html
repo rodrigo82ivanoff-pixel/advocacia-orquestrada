@@ -1882,14 +1882,33 @@ Entregue um resumo de 1 página + o que devo decidir agora.</div></div>
   (function(){
     var inp=document.getElementById('guiaSearch'),clr=document.getElementById('searchClear');
     if(!inp)return;
-    function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+    function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+    function reset(){
+      document.querySelectorAll('.xcard[data-card]').forEach(function(c){c.style.display='';c.classList.remove('open');});
+      document.querySelectorAll('.subcard[data-sub]').forEach(function(s){s.classList.remove('open');});
+      document.querySelectorAll('main > section.sec').forEach(function(s){s.style.display='';});
+    }
     inp.addEventListener('input',function(){
       var q=norm(inp.value.trim());clr.classList.toggle('show',!!inp.value);
-      var cards=document.querySelectorAll('.xcard[data-card]');
-      if(q.length<2){cards.forEach(function(c){c.style.display='';c.classList.remove('open');});return;}
-      cards.forEach(function(c){var hit=norm(c.innerText).indexOf(q)>-1;c.style.display=hit?'':'none';if(hit)c.classList.add('open');});
+      if(q.length<2){reset();return;}
+      document.querySelectorAll('main > section.sec').forEach(function(sec){
+        var cards=sec.querySelectorAll('.xcard[data-card]');
+        if(!cards.length){return;} // seções sem blocos (sumário) ficam visíveis
+        var anyHit=false;
+        cards.forEach(function(c){
+          var hit=norm(c.textContent).indexOf(q)>-1;
+          c.style.display=hit?'':'none';
+          if(hit){
+            c.classList.add('open');anyHit=true;
+            c.querySelectorAll('.subcard[data-sub]').forEach(function(s){
+              s.classList.toggle('open', norm(s.textContent).indexOf(q)>-1);
+            });
+          } else { c.classList.remove('open'); }
+        });
+        sec.style.display = anyHit ? '' : 'none';
+      });
     });
-    clr.addEventListener('click',function(){inp.value='';inp.dispatchEvent(new Event('input'));inp.focus();});
+    clr.addEventListener('click',function(){inp.value='';clr.classList.remove('show');reset();inp.focus();});
   })();
 </script>
 
