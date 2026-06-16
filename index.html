@@ -1882,24 +1882,31 @@ Entregue um resumo de 1 página + o que devo decidir agora.</div></div>
   (function(){
     var inp=document.getElementById('guiaSearch'),clr=document.getElementById('searchClear');
     if(!inp)return;
+    var counter=document.createElement('div');
+    counter.id='searchCount';
+    counter.style.cssText='max-width:540px;margin:10px auto 0;font-size:13px;font-weight:700;color:var(--azul);text-align:center;display:none';
+    var wrap=inp.closest('.search-wrap'); if(wrap){wrap.insertAdjacentElement('afterend',counter);}
     function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+    var allSecs=document.querySelectorAll('main > section.sec');
     function reset(){
       document.querySelectorAll('.xcard[data-card]').forEach(function(c){c.style.display='';c.classList.remove('open');});
       document.querySelectorAll('.subcard[data-sub]').forEach(function(s){s.classList.remove('open');});
-      document.querySelectorAll('main > section.sec').forEach(function(s){s.style.display='';});
+      allSecs.forEach(function(s){s.style.display='';});
+      counter.style.display='none';
     }
     inp.addEventListener('input',function(){
       var q=norm(inp.value.trim());clr.classList.toggle('show',!!inp.value);
       if(q.length<2){reset();return;}
-      document.querySelectorAll('main > section.sec').forEach(function(sec){
+      var totalHits=0;
+      allSecs.forEach(function(sec){
         var cards=sec.querySelectorAll('.xcard[data-card]');
-        if(!cards.length){return;} // seções sem blocos (sumário) ficam visíveis
+        if(!cards.length){ sec.style.display='none'; return; } // sumário/intro saem de cena durante a busca
         var anyHit=false;
         cards.forEach(function(c){
           var hit=norm(c.textContent).indexOf(q)>-1;
           c.style.display=hit?'':'none';
           if(hit){
-            c.classList.add('open');anyHit=true;
+            c.classList.add('open');anyHit=true;totalHits++;
             c.querySelectorAll('.subcard[data-sub]').forEach(function(s){
               s.classList.toggle('open', norm(s.textContent).indexOf(q)>-1);
             });
@@ -1907,6 +1914,10 @@ Entregue um resumo de 1 página + o que devo decidir agora.</div></div>
         });
         sec.style.display = anyHit ? '' : 'none';
       });
+      counter.style.display='block';
+      counter.textContent = totalHits>0
+        ? (totalHits+' bloco'+(totalHits>1?'s':'')+' encontrado'+(totalHits>1?'s':'')+' — role a página para ver')
+        : ('Nenhum resultado para “'+inp.value.trim()+'”');
     });
     clr.addEventListener('click',function(){inp.value='';clr.classList.remove('show');reset();inp.focus();});
   })();
