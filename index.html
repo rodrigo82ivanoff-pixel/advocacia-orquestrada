@@ -76,6 +76,7 @@
   #guiaSearch:focus{border-color:var(--azul-2);box-shadow:0 0 0 3px var(--azul-claro)}
   .search-clear{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--cinza-400);font-size:20px;cursor:pointer;line-height:1;display:none}
   .search-clear.show{display:block}
+  mark.hl{background:#fde047;color:#1a1a1a;border-radius:2px;padding:0 1px;font-weight:700}
   main{padding:0 20px 60px}
   section.sec{max-width:900px;margin:0 auto;padding-top:48px}
   .sec-sup{color:var(--azul-2);font-weight:700;font-size:13px;letter-spacing:.4px;text-transform:uppercase}
@@ -282,7 +283,7 @@
   <div class="wrap">
     <span class="eyebrow">Curso avançado · Método Ivanoff · versão de trabalho</span>
     <h1><span class="grad">Advocacia Orquestrada</span><br>Construa seu Escritório-Empresa de IA</h1>
-    <p class="sub">A sequência prática de <b>Advocacia Amplificada</b>. Aqui você sobe a régua inteira — do <b>prompt</b> à <b>skill</b>, da skill ao <b>squad</b>, do squad à <b>empresa</b> — e monta uma banca de Agentes de IA que pesquisa, redige, calcula e investiga com você no comando. Cada saída é minuta: quem lê, confere e assina é você.</p>
+    <p class="sub">Do primeiro prompt ao escritório-empresa de Agentes de IA. Aqui você sobe a régua inteira — do <b>prompt</b> à <b>skill</b>, da skill ao <b>squad</b>, do squad à <b>empresa</b> — e monta uma banca de Agentes de IA que pesquisa, redige, calcula e investiga com você no comando. Cada saída é minuta: quem lê, confere e assina é você.</p>
     <div class="stats">
       <div><b>6</b><small>dias</small></div>
       <div><b>19</b><small>blocos</small></div>
@@ -513,7 +514,7 @@ Regras:
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-topic">Conceito</span><span class="subcard-label">A régua inteira, explicada de uma vez</span></div>
           <div class="subcard-body"><div class="subcard-inner">
             <p><strong>Prompt é o comando.</strong> Você pede uma coisa, agora, e a IA responde. Resolve a tarefa de hoje, mas vive no momento: se você não está ali para escrever, não acontece nada. É dar uma instrução verbal a alguém — boa, mas que não deixa nada construído para amanhã.</p>
-            <p><strong>Skill é a habilidade pronta.</strong> Você pega o jeito certo de fazer uma coisa e empacota, para a IA executar sempre igual sem você reexplicar. O comando solto deixou de depender de você e virou competência salva. É o pulo do gato: sair do "pedir" e ir para o "ter". (No escritório, isso já é real — a sua <em>calculo-trabalhista</em> e a <em>proposta-honorarios</em> são exatamente skills.)</p>
+            <p><strong>Skill é a habilidade pronta.</strong> Você pega o jeito certo de fazer uma coisa e empacota, para a IA executar sempre igual sem você reexplicar. O comando solto deixou de depender de você e virou competência salva. É o pulo do gato: sair do "pedir" e ir para o "ter". (Um cálculo de liquidação ou uma proposta de honorários que você sempre faz do mesmo jeito são candidatos perfeitos a virar skill.)</p>
             <p><strong>Squad é o time.</strong> Quando o trabalho exige várias competências encaixadas, você junta especialistas que se coordenam: cada um faz a sua parte e passa o bastão. É uma equipe de projeto — tem papéis, ordem e entrega que ninguém daria conta sozinho. Uma execução com caçada patrimonial é assim: investiga, calcula, redige, revisa.</p>
             <p><strong>Empresa é a organização.</strong> Vários squads operando juntos, com três coisas que um time solto não tem: <strong>regras claras</strong> do que pode e não pode, <strong>memória</strong> do que já aconteceu e <strong>funcionamento contínuo</strong>. Deixa de ser entregável e vira máquina. É o que a sua arquitetura <strong>A.R.C.O.</strong> já desenha — por isso a Empresa tem uma <em>moldura</em>: a governança que rege tudo.</p>
             <div class="ladder" role="img" aria-label="Régua crescente: Prompt, Skill, Squad e Empresa">
@@ -554,7 +555,7 @@ CRITÉRIO DE SUCESSO: a resposta está pronta quando indica o caminho recomendad
 Procedimento: <span class="ph">[descreva o passo a passo que você faz hoje, ex.: como você triagem uma intimação nova do ProJuris e decide prazo, urgência e o que delega]</span>.
 
 Monte a Skill com: (1) nome curto e a descrição de quando ela deve disparar; (2) o passo a passo que o Claude segue; (3) formatos de entrada e de saída; (4) os limites e a regra de revisão humana (toda saída é minuta para eu assinar). Escreva em português, pronta para salvar como SKILL.md. No fim, me diga em uma frase como eu a aciono.</div></div>
-            <div class="info-box ib-green"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Sinal de sucesso:</strong> você recebe um arquivo com nome, gatilho e passo a passo. A partir daí, basta o assunto aparecer e o Claude executa no padrão — exatamente como já acontece com a sua <em>triagem-intimacoes</em>.</span></div>
+            <div class="info-box ib-green"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Sinal de sucesso:</strong> você recebe um arquivo com nome, gatilho e passo a passo. A partir daí, basta o assunto aparecer e o Claude executa no padrão — sem você recolar o prompt. Uma skill de triagem de intimações, por exemplo, dispara sozinha assim que a intimação chega.</span></div>
             <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Onde guardar:</strong> no Cowork e no Claude Code, skills vivem em pastas do projeto. No Dia 2 você instala um plugin pronto com mais de 30 skills jurídicas e vê tudo funcionando — e no Dia 6 você fabrica as suas.</span></div>
           </div></div>
         </div>
@@ -861,7 +862,7 @@ Pesquise nas fontes oficiais se essa tese ainda está vigente: houve superação
         <div class="subcard" data-sub>
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-demo">Demo #14</span><span class="subcard-label">Briefing automático ao conectar a pasta de um caso novo</span></div>
           <div class="subcard-body"><div class="subcard-inner">
-            <p>No Cowork, você arrasta a pasta do cliente (a sua estrutura no Drive: <em>ESCRITÓRIO IVANOFF › 02 - CLIENTES ATIVOS › [Cliente]</em>) e o Claude lê tudo e devolve um briefing — quem é, o que está em jogo, prazos à vista e o que falta.</p>
+            <p>No Cowork, você arrasta a pasta do cliente (a estrutura que você já usa no seu Drive, ex.: <em>Clientes Ativos › [Cliente]</em>) e o Claude lê tudo e devolve um briefing — quem é, o que está em jogo, prazos à vista e o que falta.</p>
             <div class="prompt-block"><span class="prompt-label">Prompt — briefing ao conectar a pasta</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text">Conectei a pasta de um caso. Leia tudo (petições, contratos, decisões, documentos) e me devolva um briefing em 1 página:
 
 1. Quem é o cliente e qual o objetivo dele.
@@ -882,7 +883,7 @@ Use só o que está na pasta. Não invente fato nem andamento. O que for prazo, 
         <div class="subcard" data-sub>
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-demo">Demo #15</span><span class="subcard-label">Análise e enquadramento chamando as skills jurídicas certas</span></div>
           <div class="subcard-body"><div class="subcard-inner">
-            <p>Com o caso lido, o Claude enquadra a tese e aciona as skills certas — exatamente como a sua <em>triagem-cliente</em> faz: identifica se é execução, trabalhista ou previdenciário e puxa o especialista adequado.</p>
+            <p>Com o caso lido, o Claude enquadra a tese e aciona as skills certas: identifica se é execução, trabalhista, previdenciário ou cível e puxa o especialista adequado. É o papel de uma skill de Triagem — você a constrói no Dia 6.</p>
             <div class="prompt-block"><span class="prompt-label">Prompt — enquadrar e acionar especialistas</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text">Com base na pasta que você leu, faça a triagem do caso:
 
 1. Enquadre a tese (área, rito, pedido principal).
@@ -891,14 +892,14 @@ Use só o que está na pasta. Não invente fato nem andamento. O que for prazo, 
 4. Liste o que precisamos pedir ao cliente antes de avançar.
 
 Trate prazos como [A CONFERIR]. Entregue como minuta de plano para eu aprovar.</div></div>
-            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Ponte com o que você já tem:</strong> esse enquadramento é o gatilho natural das suas skills <em>triagem-cliente</em>, <em>cacada-patrimonial</em> e <em>calculo-trabalhista</em>. No Dia 6 você liga tudo num squad só.</span></div>
+            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Ponte:</strong> esse enquadramento é o gatilho natural dos especialistas de Triagem, Investigação Patrimonial e Cálculo. No Dia 6 você os constrói e liga tudo num squad só.</span></div>
           </div></div>
         </div>
 
         <div class="subcard" data-sub>
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-demo">Demo #16</span><span class="subcard-label">Gerar o kit completo do cliente em Visual Law</span></div>
           <div class="subcard-body"><div class="subcard-inner">
-            <p>O ponto alto do dia: o Cowork monta a pasta completa do caso. Procuração no seu padrão (a sua <em>procuracao-ivanoff</em>), parecer, rascunho de inicial, índice de documentos — tudo com a identidade visual do escritório.</p>
+            <p>O ponto alto do dia: o Cowork monta a pasta completa do caso. Procuração no seu padrão, parecer, rascunho de inicial, índice de documentos — tudo com a identidade visual do seu escritório.</p>
             <div class="prompt-block"><span class="prompt-label">Prompt — montar o kit do caso</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text">Monte o kit completo deste caso novo, como minutas para a minha revisão e assinatura, na identidade visual do escritório (cabeçalho/rodapé Ivanoff):
 
 1. Procuração ad judicia com os poderes adequados ao caso (qualificação do cliente conforme a pasta).
@@ -909,7 +910,7 @@ Trate prazos como [A CONFERIR]. Entregue como minuta de plano para eu aprovar.</
 Entregue em .docx. Para a procuração, siga o meu modelo padrão. Nada de citação afirmada como certa — tudo [A CONFERIR].</div></div>
             <div class="states">
               <div class="state st-ok"><b>Sinal de sucesso</b>Quatro arquivos no seu padrão visual, prontos para você revisar — não para protocolar às cegas.</div>
-              <div class="state st-next"><b>Encaminhamento</b>Peça pronta e revisada → rascunho de e-mail + evento no Calendar para a Gabriela protocolar (o seu fluxo de sempre).</div>
+              <div class="state st-next"><b>Encaminhamento</b>Peça pronta e revisada → rascunho de e-mail + evento no Calendar para a sua secretária ou equipe protocolar.</div>
             </div>
             <span class="status loc">Roda local</span>
           </div></div>
@@ -1229,7 +1230,7 @@ Depois: (1) destaque as contradições ou encadeamentos que sustentam a minha te
     <div class="day-banner-info"><div class="day-banner-title">Governança e arquitetura</div><div class="day-banner-sub">1 bloco · 3 demos com prompts copiáveis</div></div>
     <div class="day-banner-time">1h00</div>
   </div>
-  <div class="day-prereq"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>Pré-requisito deste dia</b>Nenhum. Tudo roda no Cowork. Se você já tem os documentos A.R.C.O. do escritório, traga-os — vamos usá-los como fonte de verdade.</span></div>
+  <div class="day-prereq"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>Pré-requisito deste dia</b>Nenhum. Tudo roda no Cowork. Se você já tem documentos de processos ou governança do seu escritório, traga-os — vamos usá-los como fonte de verdade.</span></div>
 
   <div class="card-stack">
 
@@ -1255,14 +1256,14 @@ Antes de qualquer mudança:
 5. Liste o que eu devo testar para confirmar que não quebrou nada do que já funcionava.
 
 Não refaça o que está funcionando. Cirurgia, não demolição.</div></div>
-            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Princípio A.R.C.O.:</strong> classifique a mudança pela reversibilidade do erro. O que é fácil de reverter, mude com leveza; o que é difícil, faça backup e teste antes. É a mesma régua verde/amarelo/vermelho da sua governança.</span></div>
+            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Princípio A.R.C.O.:</strong> classifique a mudança pela reversibilidade do erro. O que é fácil de reverter, mude com leveza; o que é difícil, faça backup e teste antes. Uma régua simples — verde, amarelo, vermelho — dá conta da governança.</span></div>
           </div></div>
         </div>
 
         <div class="subcard" data-sub>
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-demo">Demo #32</span><span class="subcard-label">Ver a arquitetura inteira dos seus workflows</span></div>
           <div class="subcard-body"><div class="subcard-inner">
-            <p>Com várias skills e squads rodando, vale enxergar o mapa: quem faz o quê, o que depende de quê, onde está o gargalo e o que pode falhar. Um grafo do seu próprio sistema — feito por agentes ou por pessoas (você e a Gabriela).</p>
+            <p>Com várias skills e squads rodando, vale enxergar o mapa: quem faz o quê, o que depende de quê, onde está o gargalo e o que pode falhar. Um grafo do seu próprio sistema — feito por agentes ou por pessoas (você e a sua equipe).</p>
             <div class="prompt-block"><span class="prompt-label">Prompt — mapear a arquitetura dos processos</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text">Leia os meus documentos de governança e a lista de skills do escritório. Monte o MAPA dos meus fluxos de trabalho:
 
 1. Liste cada fluxo (ex.: intimação → triagem → peça → encaminhar à secretária para protocolo).
@@ -1281,7 +1282,7 @@ Apresente como uma visão de cima, em texto estruturado. Use os meus documentos 
         <div class="subcard" data-sub>
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-demo">Demo #33</span><span class="subcard-label">Auditoria contínua: o antes/depois e a rotina de revisão</span></div>
           <div class="subcard-body"><div class="subcard-inner">
-            <p>Governança sem medição é achismo. Você mede o ganho real — tempo com IA × sem IA, erros pegos na revisão, zero citação não verificada protocolada — e roda uma revisão periódica para o sistema não envelhecer. É o seu Painel de Métricas A.R.C.O. virando rotina.</p>
+            <p>Governança sem medição é achismo. Você mede o ganho real — tempo com IA × sem IA, erros pegos na revisão, zero citação não verificada protocolada — e roda uma revisão periódica para o sistema não envelhecer. É o painel de métricas do método A.R.C.O. virando rotina.</p>
             <div class="prompt-block"><span class="prompt-label">Prompt — plano de auditoria contínua</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text">Monte um plano de auditoria contínua dos meus agentes de IA, simples de manter:
 
 1. INDICADORES: tempo economizado por tarefa (com IA × sem IA), nº de erros pegos na minha revisão, e o indicador inegociável "zero citação [A CONFERIR] protocolada sem conferência".
@@ -1452,7 +1453,7 @@ Contrato:
 <span class="ph">[descreva: como o trabalho era prestado, frequência, ordens, pagamento, exclusividade, "pejotização"]</span>
 
 Faça: (1) teste cada requisito do vínculo (pessoalidade, habitualidade, subordinação, onerosidade) com o que os fatos indicam; (2) conclua o nível de risco; (3) monte a tese da reclamante e a defesa da reclamada; (4) liste as provas que decidiriam a questão. Jurisprudência só com fonte [A CONFERIR].</div></div>
-            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Ponte com o seu cálculo:</strong> reconhecido o vínculo, o próximo passo é a liquidação — sua skill <em>calculo-trabalhista</em> (motor PJE-Calc) assume daqui.</span></div>
+            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Ponte:</strong> reconhecido o vínculo, o próximo passo é a liquidação — o especialista de Cálculo/Liquidação (na linha do PJE-Calc), que você monta no Dia 6, assume daqui.</span></div>
           </div></div>
         </div>
 
@@ -1518,14 +1519,14 @@ Estrutura: qualificação das partes, exposição do fato, fundamento (sem citar
               <div class="ladder-step"><div class="ladder-bar lb-3">Squad</div><div class="ladder-cap">o time</div></div>
               <div class="ladder-step"><div class="ladder-bar lb-4">Empresa</div><div class="ladder-cap">a organização</div></div>
             </div>
-            <div class="info-box ib-green"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Você já começou.</strong> Suas skills <em>calculo-trabalhista</em>, <em>proposta-honorarios</em>, <em>triagem-cliente</em>, <em>cacada-patrimonial</em> e <em>triagem-intimacoes</em> já são especialistas reais. O Dia 6 completa a equipe e a transforma em empresa.</span></div>
+            <div class="info-box ib-green"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Por onde começar:</strong> não fabrique os 30 de uma vez. Comece pelos especialistas que resolvem a sua dor de hoje — cálculo, proposta, triagem, investigação patrimonial — e vá completando a equipe até ela virar empresa.</span></div>
           </div></div>
         </div>
 
         <div class="subcard" data-sub>
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-demo">Demo #44</span><span class="subcard-label">O molde fabricador: o prompt que cria qualquer skill jurídica</span></div>
           <div class="subcard-body"><div class="subcard-inner">
-            <p>Este é o prompt mais valioso do curso. Um molde que, preenchido, faz o Claude escrever uma skill jurídica premium completa — pronta para salvar e usar. É o mesmo critério de qualidade das suas skills atuais, agora replicável para qualquer especialista que faltar.</p>
+            <p>Este é o prompt mais valioso do curso. Um molde que, preenchido, faz o Claude escrever uma skill jurídica premium completa — pronta para salvar e usar. É o critério de qualidade que separa uma skill profissional de um prompt solto — replicável para qualquer um dos 30 especialistas.</p>
             <div class="prompt-block"><span class="prompt-label">Prompt mestre — fabricar uma skill jurídica premium</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text">Atue como arquiteto sênior de skills jurídicas. Vou te dar o nome de um especialista e você vai escrever a SKILL.md completa dele, no padrão do meu escritório.
 
 ESPECIALISTA: <span class="ph">[ex.: Liquidação de Sentença Trabalhista]</span>
@@ -1551,7 +1552,7 @@ Particularidades a incluir no passo a passo:
 - Gerar a minuta das primeiras declarações e o plano de partilha.
 
 Lembre: cálculos e prazos são minuta para o Rodrigo conferir; nada de presumir valor de bem sem documento.</div></div>
-            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Conexão real:</strong> esse molde é exatamente o que originou as suas skills. Use-o para fabricar as que faltam — e mantenha a sua <em>inventario-sucessoes</em> como referência de qualidade.</span></div>
+            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Dica:</strong> uma skill de Inventário, por exemplo, nasce deste molde com as particularidades de ITCMD e partilha. E no Bloco 17, logo abaixo, você já encontra cada um dos 30 especialistas escrito por inteiro — pronto para copiar e colar no seu Claude.</span></div>
           </div></div>
         </div>
 
@@ -1580,7 +1581,7 @@ Só considero a skill "aprovada" quando ela reproduzir o meu padrão em casos co
     <!-- BLOCO 17 -->
     <div class="xcard" data-card>
       <div class="xcard-head"><div class="xcard-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5z"/></svg></div>
-        <div class="xcard-info"><div class="xcard-title">Bloco 17 — A biblioteca: 30 especialistas jurídicos</div><div class="xcard-sub">70 min · A equipe completa, por departamento — verde = você já tem como skill</div></div>
+        <div class="xcard-info"><div class="xcard-title">Bloco 17 — A biblioteca: 30 especialistas jurídicos</div><div class="xcard-sub">70 min · Cada um com a SKILL.md pronta para copiar e os documentos para juntar</div></div>
         <span class="effort ef-mid">Médio</span>
         <div class="xcard-arrow"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></div></div>
       <div class="xcard-body"><div class="xcard-inner"><div class="sub-stack">
@@ -1588,8 +1589,16 @@ Só considero a skill "aprovada" quando ela reproduzir o meu padrão em casos co
         <div class="subcard" data-sub>
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-topic">Como usar</span><span class="subcard-label">Como usar a biblioteca de especialistas</span></div>
           <div class="subcard-body"><div class="subcard-inner">
-            <p>Esta é a sua equipe-alvo: 30 especialistas em 7 departamentos. Você não precisa fabricar todos de uma vez — comece pelos que resolvem a sua dor de hoje. Para cada um, use o <strong>molde fabricador (Demo #44)</strong> com o nome do especialista. O selo <span class="sk-mine">você já tem</span> marca os que já existem no escritório como skill real.</p>
-            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Além destes 30,</strong> você ainda tem skills de nicho que valem ouro: <em>auxilio-acidente-b94</em>, <em>insalubridade-gari</em>, <em>execucao-fiscal-defesa</em>, <em>maquinario-agricola</em> e <em>procuracao-ivanoff</em>. A biblioteca abaixo é o núcleo comum; as de nicho são o seu diferencial.</span></div>
+            <p>São 30 especialistas em 7 departamentos — a equipe completa de uma banca jurídica de IA. <strong>Cada um abaixo vem com a SKILL.md inteira, pronta para copiar.</strong> Você não precisa fabricar do zero: clique no especialista, copie o texto e cole no seu Claude.</p>
+            <p><strong>Como instalar uma skill (passo a passo):</strong></p>
+            <ol>
+              <li>Clique no especialista que quer e copie a SKILL.md.</li>
+              <li>No <strong>Cowork</strong>: crie um arquivo <code>SKILL.md</code> na pasta de skills do seu projeto e cole o conteúdo. No <strong>Claude Code</strong>: salve em <code>.claude/skills/[nome]/SKILL.md</code>.</li>
+              <li>Junte os <strong>documentos indicados</strong> (cada skill lista o que anexar) para a IA ter contexto real.</li>
+              <li>Pronto: quando o assunto aparecer, o Claude carrega a skill sozinho e executa no padrão.</li>
+            </ol>
+            <div class="info-box ib-amber"><svg viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></svg><span><strong>Antes de confiar, calibre.</strong> Toda skill nasce em "período de experiência" (Demo #45): rode 2 ou 3 casos que você já conhece e confira se o resultado bate com o seu padrão. Só então ela entra em produção. E lembre: toda saída é minuta — quem assina é você.</span></div>
+            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Comece enxuto:</strong> instale primeiro os 3 ou 4 especialistas que resolvem a sua dor de hoje. A equipe completa pode ser montada aos poucos.</span></div>
           </div></div>
         </div>
 
@@ -1598,61 +1607,912 @@ Só considero a skill "aprovada" quando ela reproduzir o meu padrão em casos co
           <div class="subcard-body"><div class="subcard-inner">
 
             <div class="dept-label">Produção de Peças <span class="dept-count">6 especialistas</span></div>
-            <div class="skill-grid">
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">01</span><span class="sk-name">Petição Inicial</span></div><p class="sk-do">Monta a inicial completa — fatos, fundamentos, pedidos e valor da causa — no rito da área.</p><span class="sk-mine">você já tem (peticao-grupo-abc)</span></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">02</span><span class="sk-name">Contestação e Defesas</span></div><p class="sk-do">Lê a peça de ataque e devolve a defesa com preliminares triadas e impugnação específica de cada pedido.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">03</span><span class="sk-name">Recursos Cíveis</span></div><p class="sk-do">Testa cabimento e tempestividade, isola os capítulos da decisão e ataca o erro de cada um.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">04</span><span class="sk-name">Manifestações</span></div><p class="sk-do">Resolve as petições do dia a dia respondendo estritamente ao ponto.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">05</span><span class="sk-name">Notificação Extrajudicial</span></div><p class="sk-do">Redige notificações e cartas formais com fato, fundamento, prazo e consequência da inércia.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">06</span><span class="sk-name">Parecer Jurídico</span></div><p class="sk-do">Responde a consulta com relatório, fundamentação, a corrente contrária e o grau de segurança.</p></div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">01</span><span class="subcard-label">Petição Inicial</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Monta a inicial completa — fatos, fundamentos, pedidos e valor da causa — no rito da área.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Petição Inicial
+## Quando disparar
+Quando eu pedir "fazer a inicial", "redigir petição inicial", "ajuizar", ou enviar os documentos de um caso novo para propositura.
+## Papel
+Advogado(a) sênior da área do caso, redator de peças no rito brasileiro.
+## Entradas (documentos para juntar)
+- Documentos do cliente: contrato, comprovantes, provas.
+- Procuração e qualificação completa das partes.
+- Resumo dos fatos e do resultado pretendido.
+## Passo a passo
+1. Enquadre: área, rito (CPC/CLT/JEC), competência e valor da causa.
+2. Estruture: endereçamento, qualificação, fatos, fundamentos, pedidos, valor da causa, provas, requerimentos.
+3. Redija os fatos de forma técnica e cronológica, apoiada só nos documentos.
+4. Apresente os fundamentos como argumento; marque toda lei/súmula/tema/acórdão como [A CONFERIR].
+5. Formule pedidos certos e determinados, incluindo tutela de urgência se cabível.
+## Regras inegociáveis
+- Nunca citar dispositivo, súmula ou julgado como confirmado: marcar [A CONFERIR] e descrever o que procurar na fonte oficial.
+- Não inventar fato, valor ou documento; o que faltar, perguntar antes de concluir.
+- Toda saída é MINUTA para revisão e assinatura do advogado. A skill nunca protocola.
+- Entregar em .docx, no padrão visual do escritório.
+## Saída
+Minuta da inicial completa + checklist do que confirmar antes de protocolar.
+## Autocrítica antes de entregar
+Releia como juiz e como parte contrária: a inicial é apta? Pedidos determinados? Alguma citação afirmada sem [A CONFERIR]? Corrija.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> contrato/provas, procuração, qualificação das partes e um resumo dos fatos.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">02</span><span class="subcard-label">Contestação e Defesas</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Lê a peça de ataque e devolve a defesa com preliminares triadas e impugnação específica de cada pedido.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Contestação e Defesas
+## Quando disparar
+Quando eu enviar uma inicial (ou outra peça de ataque) e pedir a defesa: "fazer a contestação", "impugnar", "defender".
+## Papel
+Advogado(a) sênior em defesa, especialista em triagem de preliminares e impugnação específica.
+## Entradas (documentos para juntar)
+- A peça de ataque (inicial/petição) na íntegra.
+- Documentos e provas do meu cliente (réu).
+- Versão dos fatos do meu cliente.
+## Passo a passo
+1. Mapeie cada pedido e cada fundamento da peça de ataque.
+2. Triagem de preliminares processuais cabíveis (sem inventar; só as aplicáveis).
+3. No mérito, impugne pedido por pedido, com a tese e a prova de cada.
+4. Aponte o ônus da prova e o que cabe a cada parte.
+5. Marque toda citação legal/jurisprudencial como [A CONFERIR].
+## Regras inegociáveis
+- Responder estritamente ao que foi alegado; não criar fato novo sem prova.
+- Nunca afirmar lei/súmula/julgado sem [A CONFERIR].
+- Saída é MINUTA para o advogado revisar e assinar.
+- Entregar em .docx no padrão do escritório.
+## Saída
+Minuta da contestação (preliminares + mérito + pedidos) + lista de provas a produzir.
+## Autocrítica antes de entregar
+Cada pedido do autor foi enfrentado? Há preliminar levantada sem base? Corrija antes de entregar.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a peça de ataque na íntegra, as provas do réu e a versão dos fatos do cliente.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">03</span><span class="subcard-label">Recursos Cíveis</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Testa cabimento e tempestividade, isola os capítulos da decisão e ataca o erro de cada um.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Recursos Cíveis
+## Quando disparar
+Quando eu enviar uma decisão/sentença/acórdão e pedir recurso: "cabe recurso?", "fazer apelação/agravo/embargos".
+## Papel
+Advogado(a) sênior recursal, rigoroso com cabimento, prazo e capítulos da decisão.
+## Entradas (documentos para juntar)
+- A decisão recorrida na íntegra.
+- A peça que originou a decisão (para confrontar).
+- Data da intimação/publicação (para o prazo).
+## Passo a passo
+1. Identifique o recurso cabível e teste a tempestividade (prazo em dias úteis) — marque [A CONFERIR no sistema].
+2. Isole os capítulos da decisão (o que foi decidido em cada ponto).
+3. Para cada capítulo atacável, aponte o erro (de fato ou de direito) e o pedido de reforma.
+4. Monte preliminares recursais (admissibilidade) e o mérito recursal.
+5. Marque jurisprudência/dispositivo como [A CONFERIR].
+## Regras inegociáveis
+- Não afirmar tempestividade sem o usuário confirmar a data no sistema.
+- Nunca citar precedente sem [A CONFERIR].
+- Saída é MINUTA para revisão e assinatura.
+- Entregar em .docx no padrão do escritório.
+## Saída
+Minuta do recurso + quadro "capítulo da decisão → erro → pedido" + alerta de prazo a confirmar.
+## Autocrítica antes de entregar
+O recurso é o cabível? Cada capítulo recorrido tem fundamento próprio? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a decisão recorrida, a peça anterior e a data de intimação/publicação.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">04</span><span class="subcard-label">Manifestações</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Resolve as petições do dia a dia do processo respondendo estritamente ao ponto.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Manifestações
+## Quando disparar
+Quando eu pedir uma petição intermediária: "manifestar sobre", "responder ao despacho", "ciência", "cumprir determinação".
+## Papel
+Advogado(a) objetivo, que responde exatamente ao que o juízo pediu — sem encher linguiça.
+## Entradas (documentos para juntar)
+- O despacho/decisão/intimação que pede a manifestação.
+- O documento sobre o qual devo me manifestar (laudo, cálculo, petição da outra parte).
+## Passo a passo
+1. Identifique exatamente o que o juízo pede e o prazo ([A CONFERIR no sistema]).
+2. Responda ao ponto, de forma direta, com fundamento quando necessário.
+3. Se for o caso, formule o pedido decorrente (juntada, prazo, providência).
+4. Marque qualquer citação como [A CONFERIR].
+## Regras inegociáveis
+- Não ampliar o objeto além do que foi pedido.
+- Nunca afirmar norma/julgado sem [A CONFERIR].
+- Saída é MINUTA para revisão e assinatura.
+- Entregar em .docx no padrão do escritório.
+## Saída
+Minuta da manifestação, curta e ao ponto, + o prazo a confirmar.
+## Autocrítica antes de entregar
+Respondi só o que foi pedido? Ficou claro e sem excesso? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> o despacho/intimação e o documento sobre o qual se manifestar.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">05</span><span class="subcard-label">Notificação Extrajudicial</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Redige notificações e cartas formais com fato, fundamento, prazo e a consequência da inércia.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Notificação Extrajudicial
+## Quando disparar
+Quando eu pedir "notificar extrajudicialmente", "carta de cobrança formal", "constituir em mora", "notificar para desocupação".
+## Papel
+Advogado(a) que redige notificações firmes e formais, no padrão brasileiro (não "demand letter").
+## Entradas (documentos para juntar)
+- Qualificação do notificante e do notificado.
+- O contrato/documento que embasa a exigência.
+- O que se exige e o prazo desejado.
+## Passo a passo
+1. Qualifique as partes.
+2. Exponha o fato de forma objetiva, apoiada nos documentos.
+3. Apresente o fundamento (sem citar lei como certa — [A CONFERIR]).
+4. Declare o que se exige, o prazo e a consequência clara da inércia (medidas cabíveis).
+5. Feche com tom firme e formal.
+## Regras inegociáveis
+- Não ameaçar medida incabível; descrever só consequências legítimas.
+- Nunca afirmar dispositivo sem [A CONFERIR].
+- Saída é MINUTA para revisão e assinatura.
+- Entregar em .docx no padrão do escritório.
+## Saída
+Minuta da notificação extrajudicial pronta para envio após revisão.
+## Autocrítica antes de entregar
+O fato está claro? O prazo e a consequência estão inequívocos? O tom é firme sem ser abusivo? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> qualificação das partes, o contrato/documento que embasa e o que se exige.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">06</span><span class="subcard-label">Parecer Jurídico</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Responde a uma consulta com relatório, fundamentação, a corrente contrária e o grau de segurança.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Parecer Jurídico
+## Quando disparar
+Quando eu pedir "fazer um parecer", "é viável?", "qual o risco jurídico de", "opinião legal sobre".
+## Papel
+Parecerista sênior, honesto sobre incertezas, que mostra os dois lados antes de concluir.
+## Entradas (documentos para juntar)
+- A consulta/pergunta objetiva.
+- Documentos e fatos relevantes do caso.
+## Passo a passo
+1. RELATÓRIO: resuma os fatos e a questão posta.
+2. FUNDAMENTAÇÃO: desenvolva a análise; marque toda norma/julgado como [A CONFERIR].
+3. CORRENTE CONTRÁRIA: apresente a melhor tese oposta e por que ela poderia prevalecer.
+4. CONCLUSÃO: responda com um grau de segurança (alta/média/baixa) e o que reduziria a incerteza.
+## Regras inegociáveis
+- Nunca dar como certo o que depende de fonte não conferida — [A CONFERIR].
+- Explicitar premissas e incertezas; não vender certeza que não existe.
+- Saída é MINUTA para revisão e assinatura.
+- Entregar em .docx no padrão do escritório.
+## Saída
+Parecer em 4 partes (relatório, fundamentação, corrente contrária, conclusão com grau de segurança).
+## Autocrítica antes de entregar
+A conclusão decorre da fundamentação? A corrente contrária foi tratada com justiça? Há certeza exagerada? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a consulta objetiva e os documentos/fatos relevantes do caso.</span></div>
+              </div></div>
             </div>
 
             <div class="dept-label">Pesquisa e Fundamentação <span class="dept-count">4 especialistas</span></div>
-            <div class="skill-grid">
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">07</span><span class="sk-name">Jurisprudência Verificada</span></div><p class="sk-do">Localiza julgados aplicáveis com link e separa o análogo do apenas parecido. Trava [A CONFERIR].</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">08</span><span class="sk-name">Precedentes Vinculantes</span></div><p class="sk-do">Mapeia o que vincula o caso — repetitivos, repercussão geral, súmulas — e como usar ou afastar.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">09</span><span class="sk-name">Mapa de Teses</span></div><p class="sk-do">Monta o quadro das teses dos dois lados, com a força de cada e a réplica pronta.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">10</span><span class="sk-name">Doutrina e Legislação</span></div><p class="sk-do">Levanta a base legal vigente e as posições doutrinárias, sinalizando divergências.</p></div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">07</span><span class="subcard-label">Jurisprudência Verificada</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Localiza julgados aplicáveis com link e separa o análogo do apenas parecido. É a skill com a trava [A CONFERIR] no centro.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Jurisprudência Verificada
+## Quando disparar
+Quando eu pedir "pesquisar jurisprudência", "achar julgado sobre", "precedente para a tese X".
+## Papel
+Pesquisador jurídico rigoroso, que só entrega o que tem fonte oficial verificável.
+## Entradas (documentos para juntar)
+- A tese/pergunta jurídica e os fatos-chave do caso.
+- Tribunais de interesse (STF, STJ, TJ, TRT da sua região).
+## Passo a passo
+1. Pesquise SOMENTE em fontes oficiais (sites dos tribunais, DataJud, DJEN) usando a busca na web.
+2. Traga apenas julgados com link que eu possa abrir e conferir; descarte o resto.
+3. Para cada um: tribunal, órgão, número, data, tese em uma frase, link.
+4. Classifique ANÁLOGO (mesma tese + mesmos fatos relevantes) × PARECIDO (só tema).
+5. Marque tudo como [A CONFERIR]; se não houver fonte, escreva "não localizei".
+## Regras inegociáveis
+- NUNCA inventar número, relator ou data. Sem link verificável = não existe.
+- Não usar bases estrangeiras; só fontes brasileiras oficiais.
+- Saída é insumo para o advogado conferir e usar.
+## Saída
+Lista de julgados [A CONFERIR] com link, separados em análogos e parecidos.
+## Autocrítica antes de entregar
+Todo julgado tem link abrível? Algum foi apresentado como certo? Remova o que não puder ser conferido.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a tese/pergunta, os fatos-chave e os tribunais de interesse.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">08</span><span class="subcard-label">Precedentes Vinculantes</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Mapeia o que vincula o caso — repetitivos, repercussão geral, súmulas — e como usar ou afastar.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Precedentes Vinculantes
+## Quando disparar
+Quando eu perguntar "tem tema/repetitivo sobre isso?", "esse precedente vincula?", "como afastar o Tema X".
+## Papel
+Especialista em precedentes qualificados (CPC art. 927) e sistema de vinculação.
+## Entradas (documentos para juntar)
+- A tese e os fatos do caso.
+- Eventuais temas/súmulas que a outra parte invocou.
+## Passo a passo
+1. Identifique o que pode vincular: repetitivos, repercussão geral, súmulas vinculantes e do tribunal.
+2. Para cada um, busque a fonte oficial e marque [A CONFERIR].
+3. Diga se o precedente FAVORECE ou PREJUDICA o caso.
+4. Se prejudica, monte a tese de DISTINÇÃO (distinguishing) ou superação.
+5. Se favorece, mostre como invocá-lo corretamente.
+## Regras inegociáveis
+- Nunca afirmar número de tema/súmula sem [A CONFERIR] na fonte oficial.
+- Não confundir precedente persuasivo com vinculante.
+- Saída é insumo para o advogado conferir.
+## Saída
+Quadro: precedente → vincula? → favorece/prejudica → como usar ou distinguir ([A CONFERIR]).
+## Autocrítica antes de entregar
+A distinção proposta é honesta e sustentável? Algum tema citado sem conferência? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a tese, os fatos e os temas/súmulas que a parte contrária invocou.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">09</span><span class="subcard-label">Mapa de Teses</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Monta o quadro das teses dos dois lados, com a força de cada e a réplica pronta.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Mapa de Teses
+## Quando disparar
+Quando eu pedir "mapear as teses", "o que a outra parte vai alegar", "quais argumentos tenho e quais ela tem".
+## Papel
+Estrategista que enxerga o caso dos dois lados antes de escrever uma linha.
+## Entradas (documentos para juntar)
+- Fatos e documentos do caso.
+- O que já se sabe da posição da parte contrária.
+## Passo a passo
+1. Liste as teses do MEU lado, da mais forte para a mais fraca.
+2. Liste as teses da PARTE CONTRÁRIA, idem.
+3. Para cada tese, dê uma nota de força (forte/média/fraca) e o porquê.
+4. Para cada tese contrária forte, escreva a RÉPLICA pronta.
+5. Marque fundamentos como [A CONFERIR].
+## Regras inegociáveis
+- Ser honesto sobre as fraquezas do próprio lado.
+- Nunca citar precedente sem [A CONFERIR].
+- Saída é insumo estratégico (minuta de análise).
+## Saída
+Quadro de teses (meu lado × contrário) com força e réplica para cada.
+## Autocrítica antes de entregar
+Tratei a tese contrária com a mesma seriedade que a minha? As réplicas resistem? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> os fatos do caso e o que já se conhece da posição adversária.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">10</span><span class="subcard-label">Doutrina e Legislação</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Levanta a base legal vigente e as posições doutrinárias, sinalizando divergências.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Doutrina e Legislação
+## Quando disparar
+Quando eu pedir "qual a base legal", "o que diz a doutrina", "fundamento legal para a tese".
+## Papel
+Pesquisador de legislação vigente e doutrina, atento a divergências e revogações.
+## Entradas (documentos para juntar)
+- O tema/tese a fundamentar.
+- A área do direito envolvida.
+## Passo a passo
+1. Levante os dispositivos legais aplicáveis e VERIFIQUE vigência (não citar revogado) — [A CONFERIR no Planalto].
+2. Apresente a posição doutrinária dominante e a divergente, quando houver.
+3. Indique onde a doutrina diverge da jurisprudência.
+4. Marque toda referência como [A CONFERIR].
+## Regras inegociáveis
+- Nunca afirmar artigo/lei sem conferência da vigência na fonte oficial.
+- Atribuir posição doutrinária só quando puder ser verificada; senão, descrever como "entendimento a confirmar".
+- Saída é insumo para o advogado conferir.
+## Saída
+Base legal vigente + panorama doutrinário (dominante × divergente), tudo [A CONFERIR].
+## Autocrítica antes de entregar
+Algum dispositivo pode estar revogado? Atribuí tese a autor sem poder confirmar? Marque como a conferir.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> o tema a fundamentar e a área do direito envolvida.</span></div>
+              </div></div>
             </div>
 
             <div class="dept-label">Análise e Estratégia de Caso <span class="dept-count">5 especialistas</span></div>
-            <div class="skill-grid">
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">11</span><span class="sk-name">Triagem de Caso</span></div><p class="sk-do">Recebe o caso novo, enquadra a tese, checa prazos e recomenda o caminho.</p><span class="sk-mine">você já tem (triagem-cliente)</span></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">12</span><span class="sk-name">Revisor Adversário</span></div><p class="sk-do">Critica a sua peça antes do juiz, sob três olhares, e devolve a correção priorizada.</p><span class="sk-mine">você já tem (agente-execucao-elite)</span></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">13</span><span class="sk-name">Análise 360</span></div><p class="sk-do">Dá a visão completa do caso, projeta vitória, derrota e acordo, e recomenda a estratégia.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">14</span><span class="sk-name">Matriz de Risco</span></div><p class="sk-do">Estima a faixa de êxito cruzando favorabilidade e risco, e indica como mitigar cada um.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">15</span><span class="sk-name">Linha do Tempo</span></div><p class="sk-do">Organiza a cronologia de fatos e atos, com prazos e marcos sinalizados na fonte.</p></div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">11</span><span class="subcard-label">Triagem de Caso</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Recebe o caso novo, enquadra a tese, checa prazos e recomenda o caminho.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Triagem de Caso
+## Quando disparar
+Quando chega um caso/cliente novo: "analisar esse caso", "vale a pena pegar?", "qual o caminho".
+## Papel
+Advogado(a) sênior que faz a primeira leitura estratégica de um caso.
+## Entradas (documentos para juntar)
+- Documentos do caso (contrato, decisões, provas).
+- Relato do cliente e o que ele quer.
+## Passo a passo
+1. Enquadre: área, rito, tese principal, parte contrária.
+2. Cheque prazos e riscos aparentes — marque [A CONFERIR no sistema].
+3. Liste 3 pontos fortes e 3 pontos fracos da posição do cliente.
+4. Diga o que pedir ao cliente antes de avançar.
+5. Recomende o próximo passo (e quais especialistas acionar depois).
+## Regras inegociáveis
+- Não cravar prazo sem o usuário confirmar no sistema.
+- Nunca afirmar norma/julgado sem [A CONFERIR].
+- Saída é minuta de plano para o advogado aprovar.
+## Saída
+Briefing de triagem: enquadramento, prazos a confirmar, fortes/fracos, próximo passo.
+## Autocrítica antes de entregar
+Fui honesto sobre as fraquezas? O próximo passo é concreto? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> documentos do caso e o relato do cliente com o que ele quer.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">12</span><span class="subcard-label">Revisor Adversário</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Critica a sua peça antes do juiz, sob três olhares, e devolve a correção priorizada.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Revisor Adversário
+## Quando disparar
+Quando eu pedir "revisar essa peça", "achar os pontos fracos", "o que a outra parte vai atacar".
+## Papel
+Conselho de três revisores: o advogado adversário, o juiz cético e o revisor de forma/prazos.
+## Entradas (documentos para juntar)
+- A peça a revisar.
+- (Opcional) a peça contrária e a decisão, se houver.
+## Passo a passo
+1. ADVOGADO ADVERSÁRIO: ataque a tese — onde ela quebra, o que impugnar.
+2. JUIZ CÉTICO: o que não convence, o que falta provar, o que está prolixo.
+3. REVISOR DE FORMA: prazos, endereçamento, pedidos, requisitos formais.
+4. Consolide numa LISTA PRIORIZADA: o que corrigir antes de protocolar, do mais grave ao menor.
+## Regras inegociáveis
+- Apontar problemas concretos, não elogios.
+- Marcar como [A CONFERIR] qualquer citação encontrada na peça que não tenha fonte.
+- Não reescrever sem o usuário pedir; primeiro, criticar.
+## Saída
+Lista priorizada de correções, com a menor mudança segura para cada problema.
+## Autocrítica antes de entregar
+As críticas são reais e acionáveis? Priorizei pelo risco? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a peça a revisar (e, se houver, a peça contrária e a decisão).</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">13</span><span class="subcard-label">Análise 360</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Dá a visão completa do caso, projeta vitória, derrota e acordo, e recomenda a estratégia.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Análise 360
+## Quando disparar
+Quando eu pedir "visão geral do caso", "cenários", "o que falar pro cliente sobre expectativa".
+## Papel
+Estrategista que projeta desfechos e traduz para a conversa com o cliente.
+## Entradas (documentos para juntar)
+- Dossiê ou documentos do caso.
+- Objetivo do cliente.
+## Passo a passo
+1. Resuma a posição do cliente e a força da tese.
+2. Projete 3 cenários — vitória, derrota, acordo — com probabilidade qualitativa (alta/média/baixa) e o porquê.
+3. Aponte o fato/prova que mais move o ponteiro entre cenários.
+4. Recomende a estratégia e o que dizer ao cliente sobre expectativa realista.
+## Regras inegociáveis
+- Sem números mágicos de "% de êxito".
+- Marcar [A CONFERIR] o que depender de fonte.
+- Saída é minuta de análise para o advogado.
+## Saída
+Análise com 3 cenários, o ponto decisivo e a recomendação estratégica.
+## Autocrítica antes de entregar
+Os cenários são realistas? A recomendação é acionável? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> o dossiê/documentos do caso e o objetivo do cliente.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">14</span><span class="subcard-label">Matriz de Risco</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Estima a faixa de êxito cruzando favorabilidade e risco, e indica como mitigar cada um.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Matriz de Risco
+## Quando disparar
+Quando eu pedir "qual o risco do caso", "matriz de risco", "o que pode dar errado e como mitigar".
+## Papel
+Analista de risco jurídico que cruza favorabilidade da tese com risco processual.
+## Entradas (documentos para juntar)
+- Os fatos e a tese do caso.
+- Provas disponíveis e lacunas conhecidas.
+## Passo a passo
+1. Liste os riscos do caso (mérito, prova, prazo, custo, contraparte).
+2. Para cada risco: probabilidade (alta/média/baixa) × impacto (alto/médio/baixo).
+3. Posicione numa matriz e destaque os de alto impacto + alta probabilidade.
+4. Para cada risco relevante, indique a mitigação concreta.
+5. Conclua com a faixa qualitativa de êxito e as condições que a alteram.
+## Regras inegociáveis
+- Sem cravar percentual exato de vitória.
+- Marcar [A CONFERIR] o que depender de norma/julgado.
+- Saída é minuta de análise.
+## Saída
+Matriz de risco (probabilidade × impacto) com mitigação por item.
+## Autocrítica antes de entregar
+Os riscos mais graves estão no topo? As mitigações são realistas? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> os fatos e a tese, as provas disponíveis e as lacunas conhecidas.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">15</span><span class="subcard-label">Linha do Tempo</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Organiza a cronologia de fatos e atos, com prazos e marcos sinalizados na fonte.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Linha do Tempo
+## Quando disparar
+Quando eu pedir "montar a cronologia", "linha do tempo do caso", "ordenar os fatos".
+## Papel
+Organizador factual que transforma uma pilha de documentos numa cronologia clara.
+## Entradas (documentos para juntar)
+- Todos os documentos com datas (contratos, e-mails, decisões, comprovantes).
+## Passo a passo
+1. Extraia cada fato/ato com sua data e a fonte (qual documento).
+2. Ordene cronologicamente.
+3. Sinalize os marcos relevantes para a tese e os prazos ([A CONFERIR no sistema]).
+4. Aponte lacunas e contradições de datas.
+## Regras inegociáveis
+- Cada item deve apontar de qual documento veio.
+- Não presumir data que não esteja na fonte.
+- Saída é insumo para peça/estratégia.
+## Saída
+Tabela: Data | Fato/Ato | Fonte | Relevância, com marcos e lacunas destacados.
+## Autocrítica antes de entregar
+Toda data tem fonte? Há contradição não sinalizada? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> todos os documentos datados do caso (contratos, e-mails, decisões, comprovantes).</span></div>
+              </div></div>
             </div>
 
             <div class="dept-label">Investigação e Prova <span class="dept-count">4 especialistas</span></div>
-            <div class="skill-grid">
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">16</span><span class="sk-name">Investigação Patrimonial</span></div><p class="sk-do">Monta o retrato de bens do devedor por fontes lícitas (SISBAJUD, RENAJUD, INFOJUD, SNIPER) e sugere a constrição.</p><span class="sk-mine">você já tem (cacada-patrimonial · mestre-dos-sistemas)</span></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">17</span><span class="sk-name">Forense Documental</span></div><p class="sk-do">Examina os documentos atrás de inconsistência e dado revelador, ligando cada achado à tese.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">18</span><span class="sk-name">Cadeia de Custódia</span></div><p class="sk-do">Planeja a coleta e a preservação da prova digital para que seja difícil de impugnar.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">19</span><span class="sk-name">Análise de Provas</span></div><p class="sk-do">Mede a força do conjunto probatório, cruza com o ônus de cada parte e aponta as lacunas.</p></div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">16</span><span class="subcard-label">Investigação Patrimonial</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Monta o retrato de bens do devedor por fontes lícitas e sugere a medida de constrição mais eficaz. É o coração da execução.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Investigação Patrimonial
+## Quando disparar
+Quando eu pedir "achar bens do devedor", "pesquisa patrimonial", "como penhorar", "o devedor não tem nada em nome dele".
+## Papel
+Especialista em localização de patrimônio para execução, por meios lícitos, e em desenho da constrição.
+## Entradas (documentos para juntar)
+- Qualificação completa do devedor (CPF/CNPJ, nome, endereços conhecidos).
+- O título e o valor atualizado da dívida.
+- O que já se sabe (empresas, parentes, bens aparentes).
+## Passo a passo
+1. Liste as fontes oficiais a acionar e a ordem: SISBAJUD (ativos financeiros), RENAJUD (veículos), INFOJUD (declarações), SNIPER/CNIB (vínculos e indisponibilidade), matrículas de imóveis, Juntas Comerciais.
+2. Para cada fonte, descreva o que pedir e o que ela revela.
+3. Monte hipóteses de blindagem: bens em nome de parentes, empresas de fachada, alienações suspeitas após a citação (fraude à execução).
+4. Recomende a medida de constrição na ordem mais eficaz (penhora, indisponibilidade, desconsideração da personalidade, medidas atípicas do art. 139, IV, CPC) — [A CONFERIR].
+5. Aponte que provas reforçam cada medida.
+## Regras inegociáveis
+- Somente meios LÍCITOS e via judicial; nada de fonte ilegal ou dado obtido de forma irregular.
+- Nunca afirmar dispositivo/medida como certa sem [A CONFERIR].
+- Saída é plano de investigação (minuta) para o advogado decidir e requerer.
+## Saída
+Plano patrimonial: fontes a acionar, hipóteses de blindagem, medida recomendada e provas de apoio.
+## Autocrítica antes de entregar
+Todas as fontes são lícitas? A medida recomendada é a mais eficaz e fundamentada? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> qualificação do devedor (CPF/CNPJ, endereços), o título e o valor atualizado, e o que já se sabe sobre bens/empresas/parentes.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">17</span><span class="subcard-label">Forense Documental</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Examina os documentos do caso atrás de inconsistência e dado revelador, ligando cada achado à tese.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Forense Documental
+## Quando disparar
+Quando eu pedir "analisar esses documentos", "achar inconsistências", "ver se tem fraude nos papéis".
+## Papel
+Analista documental minucioso, que cruza datas, valores, assinaturas e versões.
+## Entradas (documentos para juntar)
+- Todos os documentos relevantes (contratos, comprovantes, e-mails, extratos).
+## Passo a passo
+1. Catalogue cada documento (tipo, data, partes, valor).
+2. Cruze informações entre documentos: datas que não batem, valores divergentes, versões alteradas.
+3. Destaque dados reveladores (ex.: alienação logo após citação, pagamento a terceiro).
+4. Ligue cada achado à tese (o que ele prova ou enfraquece).
+## Regras inegociáveis
+- Não afirmar fraude; apontar INDÍCIOS e o que confirmaria.
+- Cada achado deve citar o documento de origem.
+- Saída é insumo para estratégia/perícia.
+## Saída
+Relatório de achados: inconsistência → documentos → o que indica → relevância para a tese.
+## Autocrítica antes de entregar
+Cada achado tem base documental? Distingui indício de conclusão? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> todos os documentos relevantes (contratos, comprovantes, e-mails, extratos).</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">18</span><span class="subcard-label">Cadeia de Custódia</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Planeja a coleta e a preservação da prova digital para que ela seja difícil de impugnar.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Cadeia de Custódia
+## Quando disparar
+Quando eu tiver prova digital (áudios, prints, mensagens) e pedir "como preservar", "fazer um laudo", "garantir a validade da prova".
+## Papel
+Perito em prova digital, focado em integridade e rastreabilidade.
+## Entradas (documentos para juntar)
+- Os arquivos digitais originais (áudios, capturas, mensagens).
+- A origem de cada um (quem entregou, quando).
+## Passo a passo
+1. Registre a ORIGEM de cada arquivo (quem, quando, como obteve).
+2. Gere e anote o HASH (ex.: SHA-256) de cada original, mantido intacto.
+3. Documente o TRATAMENTO (conversão, transcrição) sem alterar o original.
+4. Monte o LAUDO: metodologia, achados, e a ressalva de que a degravação definitiva, se exigida, deve ser oficial.
+## Regras inegociáveis
+- Nunca alterar o arquivo original; trabalhar sempre em cópia.
+- Processar localmente dados sensíveis (LGPD).
+- O laudo é minuta; o advogado assina e responde por ele.
+## Saída
+Procedimento de custódia + modelo de laudo (.docx) preenchível.
+## Autocrítica antes de entregar
+A integridade está documentada (hash)? A origem está rastreável? O laudo resiste à impugnação? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> os arquivos digitais originais e a origem de cada um (quem entregou e quando).</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">19</span><span class="subcard-label">Análise de Provas</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Mede a força do conjunto probatório, cruza com o ônus de cada parte e aponta as lacunas.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Análise de Provas
+## Quando disparar
+Quando eu pedir "minhas provas são suficientes?", "o que falta provar", "quem tem o ônus aqui".
+## Papel
+Analista probatório que pensa como o juiz que vai valorar as provas.
+## Entradas (documentos para juntar)
+- A tese e o pedido.
+- As provas disponíveis (documentos, testemunhas, perícia).
+## Passo a passo
+1. Liste cada fato que precisa ser provado.
+2. Para cada fato, diga de quem é o ônus da prova e qual prova o sustenta.
+3. Avalie a força de cada prova (forte/média/fraca).
+4. Aponte as LACUNAS (fatos sem prova suficiente) e que prova as preencheria.
+## Regras inegociáveis
+- Não superestimar prova frágil.
+- Marcar [A CONFERIR] o que depender de norma sobre ônus/admissibilidade.
+- Saída é insumo estratégico.
+## Saída
+Quadro: fato a provar → ônus → prova → força → lacuna/como preencher.
+## Autocrítica antes de entregar
+Cada fato essencial está coberto? As lacunas estão claras? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a tese e o pedido, mais as provas disponíveis (documentos, rol de testemunhas, laudos).</span></div>
+              </div></div>
             </div>
 
             <div class="dept-label">Contratos e Consultivo <span class="dept-count">4 especialistas</span></div>
-            <div class="skill-grid">
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">20</span><span class="sk-name">Revisão de Contrato</span></div><p class="sk-do">Lê o contrato pelo risco do seu cliente, cláusula a cláusula, com redação alternativa.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">21</span><span class="sk-name">Redação de Contrato</span></div><p class="sk-do">Elabora o contrato sob medida, prevendo o conflito antes que ele aconteça.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">22</span><span class="sk-name">LGPD e Compliance</span></div><p class="sk-do">Traduz a LGPD em providências: diagnostica lacunas e entrega o plano de adequação priorizado.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">23</span><span class="sk-name">Due Diligence</span></div><p class="sk-do">Audita a operação por frentes e mapeia passivo escondido antes de o negócio fechar.</p></div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">20</span><span class="subcard-label">Revisão de Contrato</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Lê o contrato pelo risco do seu cliente, cláusula a cláusula, com redação alternativa.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Revisão de Contrato
+## Quando disparar
+Quando eu enviar um contrato e pedir "revisar", "achar os riscos", "está seguro para o meu cliente?".
+## Papel
+Advogado(a) contratualista que lê sempre pela ótica do MEU cliente.
+## Entradas (documentos para juntar)
+- O contrato a revisar.
+- Quem é o meu cliente (qual parte) e o objetivo do negócio.
+## Passo a passo
+1. Identifique o tipo de contrato e o regime (Código Civil; CDC se for consumo).
+2. Leia cláusula a cláusula apontando risco para o meu cliente.
+3. Sinalize cláusulas potencialmente abusivas/nulas e o porquê — [A CONFERIR].
+4. Para cada risco, proponha redação alternativa mais segura.
+5. Priorize as 5 cláusulas mais perigosas.
+## Regras inegociáveis
+- Sempre pela ótica do meu cliente, não "neutra".
+- Nunca afirmar dispositivo/súmula sem [A CONFERIR].
+- Saída é minuta de parecer + sugestões de redline.
+## Saída
+Parecer de riscos + redação alternativa das cláusulas críticas.
+## Autocrítica antes de entregar
+Olhei pela ótica certa? As 5 piores cláusulas estão no topo? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> o contrato e a indicação de qual parte é o seu cliente + o objetivo do negócio.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">21</span><span class="subcard-label">Redação de Contrato</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Elabora o contrato sob medida, prevendo o conflito antes que ele aconteça.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Redação de Contrato
+## Quando disparar
+Quando eu pedir "fazer um contrato de", "minutar um acordo", "redigir instrumento".
+## Papel
+Redator de contratos que blinda o cliente prevendo o litígio futuro.
+## Entradas (documentos para juntar)
+- O tipo de contrato e o objeto.
+- Partes, valores, prazos e o que é essencial para o cliente.
+## Passo a passo
+1. Defina objeto, partes e qualificação.
+2. Estruture as cláusulas essenciais (objeto, preço, prazo, obrigações, rescisão, multa, foro).
+3. Inclua cláusulas de proteção do cliente (garantias, hipóteses de inadimplemento, resolução).
+4. Antecipe os pontos de conflito e enderece-os no texto.
+5. Marque qualquer base legal citada como [A CONFERIR].
+## Regras inegociáveis
+- Não usar cláusula abusiva contra a própria parte do cliente.
+- Adequar ao CDC quando for relação de consumo.
+- Saída é minuta para revisão e assinatura.
+## Saída
+Minuta do contrato (.docx) com as cláusulas de proteção destacadas.
+## Autocrítica antes de entregar
+O contrato protege o meu cliente nos cenários ruins? Falta alguma cláusula essencial? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> o tipo e o objeto do contrato, as partes, valores, prazos e o que é essencial para o cliente.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">22</span><span class="subcard-label">LGPD e Compliance</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Traduz a LGPD em providências: diagnostica lacunas e entrega o plano de adequação priorizado.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: LGPD e Compliance
+## Quando disparar
+Quando eu pedir "adequar à LGPD", "requisição de titular", "esse cliente trata dados, e agora?".
+## Papel
+Especialista em proteção de dados que transforma a LGPD em plano prático.
+## Entradas (documentos para juntar)
+- Descrição da atividade do cliente e dos dados que ele trata.
+- Eventual requisição de titular ou incidente.
+## Passo a passo
+1. Mapeie os dados tratados, as bases legais e os papéis (controlador/operador).
+2. Diagnostique lacunas (consentimento, segurança, política, retenção).
+3. Se houver requisição de titular: identifique o direito, o prazo e a resposta cabível.
+4. Entregue um plano de adequação priorizado (o que fazer primeiro).
+5. Marque base legal como [A CONFERIR].
+## Regras inegociáveis
+- Não prometer "conformidade total"; entregar plano realista.
+- Dados sensíveis processados localmente.
+- Saída é minuta para revisão.
+## Saída
+Diagnóstico LGPD + plano de adequação priorizado (e a resposta ao titular, se for o caso).
+## Autocrítica antes de entregar
+O plano é acionável e priorizado? O prazo da requisição está correto ([A CONFERIR])? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a descrição da atividade e dos dados tratados, e a requisição/incidente se houver.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">23</span><span class="subcard-label">Due Diligence</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Audita a operação por frentes e mapeia passivo escondido antes de o negócio fechar.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Due Diligence
+## Quando disparar
+Quando eu pedir "auditar essa empresa/operação", "due diligence", "tem passivo escondido?".
+## Papel
+Auditor jurídico que vasculha riscos antes de uma aquisição ou contrato relevante.
+## Entradas (documentos para juntar)
+- Documentos societários, contratos, processos, certidões.
+- O objetivo da operação.
+## Passo a passo
+1. Organize a auditoria por frentes: societária, contratual, trabalhista, tributária, judicial, regulatória.
+2. Em cada frente, liste o que foi analisado e os achados de risco.
+3. Classifique cada risco (alto/médio/baixo) e estime o passivo possível.
+4. Aponte o que falta receber para completar a análise.
+5. Marque norma/julgado como [A CONFERIR].
+## Regras inegociáveis
+- Não concluir "sem riscos" sem ter recebido a documentação mínima.
+- Sinalizar claramente o que não foi possível verificar.
+- Saída é relatório-minuta para o advogado.
+## Saída
+Relatório de due diligence por frente, com matriz de risco e pendências.
+## Autocrítica antes de entregar
+Cobri todas as frentes? Sinalizei o que não pude verificar? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> documentos societários, contratos, processos, certidões e o objetivo da operação.</span></div>
+              </div></div>
             </div>
 
             <div class="dept-label">Cálculo e Financeiro <span class="dept-count">3 especialistas</span></div>
-            <div class="skill-grid">
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">24</span><span class="sk-name">Cálculo de Débito</span></div><p class="sk-do">Apura e atualiza valores com memória transparente — cada número com o seu critério e a fonte do índice.</p><span class="sk-mine">você já tem (calculo-trabalhista)</span></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">25</span><span class="sk-name">Liquidação de Sentença</span></div><p class="sk-do">Traduz a sentença em valor fiel ao decidido, sem acrescentar rubrica não deferida.</p><span class="sk-mine">você já tem (calculo-trabalhista)</span></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">26</span><span class="sk-name">Viabilidade da Demanda</span></div><p class="sk-do">Junta o jurídico e o econômico e diz se a causa compensa — proveito, custo, risco e prazo.</p></div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">24</span><span class="subcard-label">Cálculo de Débito</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Apura e atualiza valores com memória transparente — cada número com o seu critério e a fonte do índice.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Cálculo de Débito
+## Quando disparar
+Quando eu pedir "atualizar o valor", "calcular a dívida", "quanto dá com juros e correção".
+## Papel
+Calculista que entrega memória transparente — cada número rastreável.
+## Entradas (documentos para juntar)
+- O valor original, a data inicial e a data final.
+- O índice de correção e a taxa de juros aplicáveis (e a base legal/contratual).
+## Passo a passo
+1. Identifique principal, termo inicial, termo final, índice e juros.
+2. Monte a memória de cálculo passo a passo (cada parcela com seu critério).
+3. Cite a FONTE de cada índice (tabela oficial) — marque [A CONFERIR a tabela vigente].
+4. Apresente o total e o detalhamento.
+## Regras inegociáveis
+- Nunca inventar índice ou taxa; usar tabela oficial conferida.
+- Mostrar a conta, não só o resultado.
+- Saída é minuta de cálculo para o advogado conferir e assinar.
+## Saída
+Memória de cálculo detalhada + total, com a fonte de cada índice.
+## Autocrítica antes de entregar
+Cada número tem critério e fonte? Os índices estão vigentes ([A CONFERIR])? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> valor original, datas inicial/final, o índice e os juros aplicáveis (com a base legal ou contratual).</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">25</span><span class="subcard-label">Liquidação de Sentença</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Traduz a sentença em valor fiel ao que foi decidido, sem acrescentar rubrica não deferida.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Liquidação de Sentença
+## Quando disparar
+Quando eu enviar uma sentença/acórdão e pedir "liquidar", "fazer a conta da condenação", "memória de cálculo da sentença".
+## Papel
+Liquidante fiel ao título — só calcula o que foi efetivamente deferido.
+## Entradas (documentos para juntar)
+- A sentença/acórdão (com o trânsito em julgado, se houver).
+- Documentos de base (contrato, holerites, TRCT, no trabalhista).
+- Critérios de correção/juros definidos no título.
+## Passo a passo
+1. Extraia da decisão CADA rubrica deferida e os parâmetros (período, base, índices).
+2. NÃO inclua rubrica que não foi deferida.
+3. Calcule cada rubrica com memória passo a passo (linha tipo PJE-Calc, no trabalhista).
+4. Aplique correção e juros conforme o título — [A CONFERIR índices].
+5. Some e apresente o demonstrativo.
+## Regras inegociáveis
+- Fidelidade ao título: nada além do decidido.
+- Índices só de tabela oficial conferida.
+- Saída é minuta para o advogado conferir e assinar.
+## Saída
+Demonstrativo de liquidação por rubrica + total, fiel à sentença.
+## Autocrítica antes de entregar
+Incluí só o que foi deferido? Cada rubrica tem base na decisão? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a sentença/acórdão, os documentos de base (contrato, holerites, TRCT) e os critérios de correção/juros do título.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">26</span><span class="subcard-label">Viabilidade da Demanda</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Junta o jurídico e o econômico e diz se a causa compensa — proveito, custo, risco e prazo.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Viabilidade da Demanda
+## Quando disparar
+Quando eu pedir "vale a pena entrar?", "essa causa compensa?", "análise de viabilidade".
+## Papel
+Analista que cruza chance jurídica com retorno econômico.
+## Entradas (documentos para juntar)
+- A tese e a força dela (use a Matriz de Risco se já tiver).
+- Proveito econômico pretendido, custos (custas, perícia), tempo estimado.
+## Passo a passo
+1. Estime o proveito econômico realista (não o otimista).
+2. Levante os custos (custas, perícia, tempo de tramitação).
+3. Cruze com a chance de êxito (qualitativa).
+4. Conclua: vale a pena? Em que condições (acordo, risco assumido)?
+## Regras inegociáveis
+- Honestidade sobre prazo e risco; sem promessa de êxito.
+- Marcar [A CONFERIR] valores de custas/índices.
+- Saída é análise-minuta para decisão do advogado e do cliente.
+## Saída
+Parecer de viabilidade: proveito × custo × risco × prazo, com recomendação.
+## Autocrítica antes de entregar
+A conta considerou o cenário realista, não só o melhor? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a tese e sua força, o proveito pretendido, os custos estimados e o tempo de tramitação.</span></div>
+              </div></div>
             </div>
 
             <div class="dept-label">Gestão, Comercial e Operação <span class="dept-count">4 especialistas</span></div>
-            <div class="skill-grid">
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">27</span><span class="sk-name">Gestão de Carteira</span></div><p class="sk-do">Enxerga a carteira inteira, prioriza por urgência e define o próximo passo de cada caso.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">28</span><span class="sk-name">Comunicação com Cliente</span></div><p class="sk-do">Explica o jurídico em linguagem que o cliente entende, no canal e no tom certos.</p></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">29</span><span class="sk-name">Proposta e Honorários</span></div><p class="sk-do">Apresenta valor antes de preço e estrutura os honorários com escopo e condições claras.</p><span class="sk-mine">você já tem (proposta-honorarios)</span></div>
-              <div class="skill-card"><div class="sk-h"><span class="sk-num">30</span><span class="sk-name">Memória da Banca</span></div><p class="sk-do">Guarda e devolve o conhecimento do escritório — teses, modelos e decisões recuperáveis por tema.</p></div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">27</span><span class="subcard-label">Gestão de Carteira</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Enxerga a carteira inteira, prioriza por urgência e define o próximo passo de cada caso.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Gestão de Carteira
+## Quando disparar
+Quando eu pedir "olhar minha carteira", "o que priorizar essa semana", "status dos casos".
+## Papel
+Gestor da carteira do escritório, focado em prioridade e próximo passo.
+## Entradas (documentos para juntar)
+- As pastas/relação de casos ativos (ou uma planilha de processos).
+## Passo a passo
+1. Monte/atualize a tabela: Cliente | Processo | Área | Fase | Último ato | Próximo passo | Prazo | Prioridade.
+2. Marque prazos como [A CONFERIR no sistema]; não cravar.
+3. Ordene por prioridade (vencimento + valor + risco).
+4. Aponte os 3 casos que exigem ação hoje e por quê.
+## Regras inegociáveis
+- Não inventar andamento; o que não estiver na fonte, marcar "(verificar no sistema)".
+- Rodar localmente (dados sensíveis de clientes).
+- Saída é painel de gestão para o advogado decidir.
+## Saída
+Carteira em tabela priorizada + os 3 casos do dia.
+## Autocrítica antes de entregar
+A priorização reflete risco e prazo reais? Algo foi presumido? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> a relação de casos ativos (pastas ou planilha de processos).</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">28</span><span class="subcard-label">Comunicação com Cliente</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Explica o jurídico em linguagem que o cliente entende, no canal e no tom certos.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Comunicação com Cliente
+## Quando disparar
+Quando eu pedir "explicar isso pro cliente", "responder o cliente", "dar uma satisfação sobre o andamento".
+## Papel
+Tradutor do juridiquês para o cliente, acolhedor e claro.
+## Entradas (documentos para juntar)
+- O fato jurídico a comunicar (decisão, andamento, exigência).
+- O canal (WhatsApp, e-mail) e o perfil do cliente.
+## Passo a passo
+1. Resuma em uma frase o que aconteceu na prática.
+2. Explique em linguagem simples (sem jargão; termo técnico só com explicação entre parênteses).
+3. Diga o que muda para o cliente e o próximo passo.
+4. Ajuste o tom e o tamanho ao canal.
+## Regras inegociáveis
+- Não dar garantia de resultado nem conselho que exponha o cliente.
+- Não revelar estratégia sensível por canal inseguro.
+- Saída é minuta de mensagem para o advogado enviar.
+## Saída
+Mensagem pronta no tom e tamanho do canal escolhido.
+## Autocrítica antes de entregar
+Um leigo entende em uma leitura? Prometi algo que não posso garantir? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> o fato a comunicar (decisão/andamento) e o canal + perfil do cliente.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">29</span><span class="subcard-label">Proposta e Honorários</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Apresenta valor antes de preço e estrutura os honorários com escopo e condições claras.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Proposta e Honorários
+## Quando disparar
+Quando eu pedir "fazer uma proposta", "quanto cobrar", "minuta de contrato de honorários".
+## Papel
+Consultor comercial que vende valor antes de preço e estrutura honorários com clareza.
+## Entradas (documentos para juntar)
+- O diagnóstico do caso (tese, complexidade, proveito econômico).
+- A modalidade pretendida (fixo, êxito, misto) e a minha política de honorários.
+## Passo a passo
+1. Resuma o problema do cliente e o valor de resolvê-lo (antes de falar preço).
+2. Defina o escopo: o que está incluído e o que não está.
+3. Estruture os honorários na modalidade adequada (fixo / êxito / misto) e as condições (parcelamento, custas por conta do cliente).
+4. Deixe TODO VALOR marcado [CONFIRMAR] — preço é decisão do advogado.
+5. Gere a Proposta ao cliente e a minuta de Contrato de Honorários.
+## Regras inegociáveis
+- A skill NUNCA define preço sozinha nem envia ao cliente: valores saem [CONFIRMAR].
+- Escopo e condições sempre explícitos para evitar conflito futuro.
+- Saída é minuta para o advogado revisar, precificar e assinar.
+## Saída
+Proposta comercial + minuta de contrato de honorários, com valores [CONFIRMAR].
+## Autocrítica antes de entregar
+Vendi valor antes de preço? O escopo está claro? Algum valor saiu sem [CONFIRMAR]? Corrija.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> o diagnóstico do caso, a modalidade pretendida e a sua política de honorários.</span></div>
+              </div></div>
+            </div>
+
+            <div class="subcard" data-sub>
+              <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sk-num">30</span><span class="subcard-label">Memória da Banca</span></div>
+              <div class="subcard-body"><div class="subcard-inner">
+                <p>Guarda e devolve o conhecimento do escritório — teses, modelos e decisões recuperáveis por tema.</p>
+                <div class="prompt-block"><span class="prompt-label">SKILL.md — copie e cole no seu Claude</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text"># Skill: Memória da Banca
+## Quando disparar
+Quando eu pedir "guardar essa tese", "já fizemos algo parecido?", "arquivar esse modelo", "recuperar o que sei sobre X".
+## Papel
+Bibliotecário do conhecimento do escritório — arquiva e devolve por tema.
+## Entradas (documentos para juntar)
+- O material a guardar (tese vencedora, modelo de peça, decisão importante).
+- Ou o tema que quero recuperar.
+## Passo a passo
+1. Ao GUARDAR: classifique por tema, área e tipo (tese, modelo, decisão), com palavras-chave e o resultado obtido.
+2. Registre o contexto (que caso, por que funcionou) — anonimizando dados sensíveis do cliente.
+3. Ao RECUPERAR: busque por tema e devolva o que existe, com o contexto de uso.
+4. Sinalize o que precisa ser atualizado (norma mudou, tese superada).
+## Regras inegociáveis
+- Anonimizar dados de cliente ao arquivar conhecimento reutilizável.
+- Marcar [A CONFERIR] teses antigas antes de reusar (podem estar superadas).
+- Saída é insumo de conhecimento, sempre revisável.
+## Saída
+Registro organizado por tema (ao guardar) ou o acervo recuperado (ao buscar).
+## Autocrítica antes de entregar
+O conhecimento está recuperável por tema? Dados sensíveis foram anonimizados? Revise.</div></div>
+                <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Documentos para juntar:</strong> o material a arquivar (tese, modelo, decisão) ou o tema que quer recuperar.</span></div>
+              </div></div>
             </div>
 
           </div></div>
@@ -1718,7 +2578,7 @@ FRENTE D — ESTRATÉGIA: qual medida de constrição pedir primeiro e por quê 
 Consolide num plano priorizado de execução, como minuta. Caso: <span class="ph">[cole]</span></div></div>
             <div class="prompt-block"><span class="prompt-label">Exemplo — Squad de Execução (blindagem patrimonial)</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text">[Use o Squad de Execução com:]
 CASO: devedor de execução que, após citado, transferiu imóveis para uma filha recém-incluída no quadro societário de uma empresa de fachada, e segue ostentando alto padrão sem bens em nome próprio. Quero localizar o patrimônio oculto, demonstrar a fraude e definir a medida de constrição mais eficaz.</div></div>
-            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Este é o seu jogo.</strong> Esse squad é a sua skill <em>cacada-patrimonial</em> + <em>mestre-dos-sistemas</em> + <em>calculo-trabalhista</em> + <em>agente-execucao-elite</em> rodando juntas, coordenadas, sobre o mesmo caso.</span></div>
+            <div class="info-box ib-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span><strong>Por que importa:</strong> esse squad é a Investigação Patrimonial + o Cálculo de Débito + a Estratégia de Execução (especialistas do Bloco 17) rodando juntas, coordenadas, sobre o mesmo caso.</span></div>
           </div></div>
         </div>
 
@@ -1759,17 +2619,17 @@ Entregue como checklist executável, passo a passo.</div></div>
         <div class="subcard" data-sub>
           <div class="subcard-head"><span class="subcard-arrow"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M3 1.5L7 5L3 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="subcard-badge sb-demo">Demo #49</span><span class="subcard-label">Runbook operacional: da intimação capturada à peça pronta</span></div>
           <div class="subcard-body"><div class="subcard-inner">
-            <p>O runbook que fecha o ciclo do dia. O DJEN tem uma API pública do CNJ que devolve as suas intimações pela OAB. Você liga essa captura ao Squad da Petição — e o que o tribunal publica de manhã chega até você já como minuta. É a sua <em>triagem-intimacoes</em> levada ao automático, terminando no fluxo de sempre: peça pronta → Gabriela protocola.</p>
+            <p>O runbook que fecha o ciclo do dia. O DJEN tem uma API pública do CNJ que devolve as suas intimações pela OAB. Você liga essa captura ao Squad da Petição — e o que o tribunal publica de manhã chega até você já como minuta. É a triagem de intimações levada ao automático, terminando no fluxo natural: peça pronta → secretária ou equipe protocola.</p>
             <div class="prompt-block"><span class="prompt-label">Prompt — runbook da semana (Cowork ou Claude Code)</span><button class="copy-btn" onclick="copyPrompt(this)">Copiar</button><div class="prompt-text">Monte e execute o meu runbook operacional da semana, nesta ordem:
 
 1. Consulte minhas intimações no DJEN pela API pública do CNJ, com a minha OAB <span class="ph">[294.830]</span> e UF <span class="ph">[SP]</span>, dos últimos 15 dias.
 2. Classifique cada intimação por urgência e calcule o prazo em dias úteis (tipo de ato + feriados) — tudo marcado [A CONFERIR no sistema].
 3. Separe o que é estratégico (decisão minha) do que é delegável para a secretária.
 4. Para as 3 mais urgentes, acione o Squad da Petição e gere a minuta de cada uma.
-5. Entregue: uma agenda priorizada (prazo, processo, ato) + as minutas como rascunho para a minha revisão e assinatura + um rascunho de e-mail para a Gabriela com o que ela protocola.
+5. Entregue: uma agenda priorizada (prazo, processo, ato) + as minutas como rascunho para a minha revisão e assinatura + um rascunho de e-mail para a secretária/equipe com o que protocolar.
 
 Quando faltar dado ou houver homônimo, me pergunte antes de prosseguir.</div></div>
-            <div class="info-box ib-purple"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg><span><strong>Este é o braço operacional da sua empresa.</strong> A ponte entre "o tribunal me intimou" e "o squad já redigiu". A captura usa o endereço público do CNJ; os especialistas que você fabricou fazem o resto; e você entra para revisar e assinar. A Gabriela protocola — exatamente o seu fluxo de hoje, agora turbinado.</span></div>
+            <div class="info-box ib-purple"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg><span><strong>Este é o braço operacional da sua empresa.</strong> A ponte entre "o tribunal me intimou" e "o squad já redigiu". A captura usa o endereço público do CNJ; os especialistas que você fabricou fazem o resto; e você entra para revisar e assinar. A secretária ou equipe protocola.</span></div>
           </div></div>
         </div>
 
@@ -1888,14 +2748,40 @@ Entregue um resumo de 1 página + o que devo decidir agora.</div></div>
     var wrap=inp.closest('.search-wrap'); if(wrap){wrap.insertAdjacentElement('afterend',counter);}
     function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
     var allSecs=document.querySelectorAll('main > section.sec');
+    function clearHl(){
+      document.querySelectorAll('mark.hl').forEach(function(m){var p=m.parentNode;if(!p)return;p.replaceChild(document.createTextNode(m.textContent),m);p.normalize();});
+    }
+    function highlight(root,term){
+      if(!term)return;
+      var rx=new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');
+      var nodes=[],w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+        if(!n.nodeValue||!n.nodeValue.trim())return NodeFilter.FILTER_REJECT;
+        var p=n.parentNode;if(!p)return NodeFilter.FILTER_REJECT;
+        var nm=p.nodeName;if(nm==='SCRIPT'||nm==='STYLE'||nm==='MARK')return NodeFilter.FILTER_REJECT;
+        return rx.test(n.nodeValue)?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;
+      }});
+      var n;while(n=w.nextNode())nodes.push(n);
+      nodes.forEach(function(node){
+        var s=node.nodeValue,frag=document.createDocumentFragment(),last=0,m;rx.lastIndex=0;
+        while(m=rx.exec(s)){
+          if(m.index>last)frag.appendChild(document.createTextNode(s.slice(last,m.index)));
+          var mk=document.createElement('mark');mk.className='hl';mk.textContent=m[0];frag.appendChild(mk);
+          last=m.index+m[0].length;if(m.index===rx.lastIndex)rx.lastIndex++;
+        }
+        if(last<s.length)frag.appendChild(document.createTextNode(s.slice(last)));
+        if(node.parentNode)node.parentNode.replaceChild(frag,node);
+      });
+    }
     function reset(){
+      clearHl();
       document.querySelectorAll('.xcard[data-card]').forEach(function(c){c.style.display='';c.classList.remove('open');});
       document.querySelectorAll('.subcard[data-sub]').forEach(function(s){s.classList.remove('open');});
       allSecs.forEach(function(s){s.style.display='';});
       counter.style.display='none';
     }
     inp.addEventListener('input',function(){
-      var q=norm(inp.value.trim());clr.classList.toggle('show',!!inp.value);
+      var raw=inp.value.trim();var q=norm(raw);clr.classList.toggle('show',!!inp.value);
+      clearHl();
       if(q.length<2){reset();return;}
       var totalHits=0;
       allSecs.forEach(function(sec){
@@ -1908,16 +2794,17 @@ Entregue um resumo de 1 página + o que devo decidir agora.</div></div>
           if(hit){
             c.classList.add('open');anyHit=true;totalHits++;
             c.querySelectorAll('.subcard[data-sub]').forEach(function(s){
-              s.classList.toggle('open', norm(s.textContent).indexOf(q)>-1);
+              var sh=norm(s.textContent).indexOf(q)>-1; s.classList.toggle('open', sh);
             });
+            highlight(c, raw);
           } else { c.classList.remove('open'); }
         });
         sec.style.display = anyHit ? '' : 'none';
       });
       counter.style.display='block';
       counter.textContent = totalHits>0
-        ? (totalHits+' bloco'+(totalHits>1?'s':'')+' encontrado'+(totalHits>1?'s':'')+' — role a página para ver')
-        : ('Nenhum resultado para “'+inp.value.trim()+'”');
+        ? (totalHits+' bloco'+(totalHits>1?'s':'')+' encontrado'+(totalHits>1?'s':'')+' — termo destacado em amarelo abaixo')
+        : ('Nenhum resultado para “'+raw+'”');
     });
     clr.addEventListener('click',function(){inp.value='';clr.classList.remove('show');reset();inp.focus();});
   })();
